@@ -1,0 +1,18 @@
+{
+  "name": "meuprojeto28",
+  "homepage": "https://github.com/julinoneto/symfony28-testes",
+  "authors": [
+    "Julino Neto <julinotds@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
