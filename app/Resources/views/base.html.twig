@@ -2,28 +2,28 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {%- stylesheets
+        <title>{% block title %}Welcodme!{% endblock %}</title>
+        {% stylesheets
         'vendor/bootstrap/dist/css/bootstrap.css'
         'vendor/font-awesome/css/font-awesome.css'
         filter='cssrewrite'
         %}
         <link rel="stylesheet" href="{{ asset_url }}" />
         {% endstylesheets %}
-        {%- block stylesheets -%}
-        {% endblock %}
+        {% block stylesheets %}
+        {% endblock stylesheets %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
         {% block body %}
         {% endblock %}
-        {%- block javascripts -%}
-        {% endblock %}
-        {% javascripts
+        {% block javascripts %}
+        {% endblock javascripts %}
+            {% javascripts
         'vendor/jquery/dist/jquery.js'
         'vendor/bootstrap/dist/js/bootstrap.js'
-        -%}
-        <script src="{{ asset_url }}"></script>
-        {% endjavascripts %}
-    </body>
-</html>
+            %}
+            <script src="{{ asset_url }}"></script>
+            {% endjavascripts %}
+        </body>
+    </html>

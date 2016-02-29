@@ -13,7 +13,7 @@ parameters:
 
 assetic:
     debug:          '%kernel.debug%'
-    use_controller: '%kernel.debug%'
+    use_controller: true
     filters:
         cssrewrite: ~
 
